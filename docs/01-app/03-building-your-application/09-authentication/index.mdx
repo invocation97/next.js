@@ -1137,6 +1137,7 @@ For example, create a separate file for your DAL that includes a `verifySession(
 import 'server-only'
 
 import { cookies } from 'next/headers'
+import { cache } from "react";
 import { decrypt } from '@/app/lib/session'
 
 export const verifySession = cache(async () => {
